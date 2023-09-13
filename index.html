@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image encryption app</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="encrypt">
+
+        <h2>Encrypt Image</h2>
+
+    <div class="container">
+       <canvas id="canvas-encrypt"></canvas>
+    </div>
+    
+    <div class="input-container">
+        <label for="Target">Upload base image</label>
+        <input type="file" id="target" mltiple='false' accept='image/*'>
+    </div>
+    <div class="input-container">
+        <label for="Encryption">Upload encryption image</label>
+        <input type="file" id="encryption" multiple='false' accept='image/*'>
+    </div>
+    <button id="encrypt-btn">Save image</button>
+
+    </div>
+
+    <hr>
+
+    <div class="decrypt">
+        <h2>Decrypt Image from source</h2>
+        <small>If you use a previously unencrypted image, you will get an inaccurate result.</small>
+        <div class="input-container">
+            <label for="Target">Upload encrypted image</label>
+            <input type="file" id="decrypt-image" mltiple='false' accept='image/*'>
+        </div>
+
+        <button id="decrypt">Decrypt</button>
+      
+        <div class="container">
+            <canvas id="canvas-decrypt1"></canvas>
+            <canvas id="canvas-decrypt2"></canvas>
+         </div>
+
+    </div>
+    <script src='https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
